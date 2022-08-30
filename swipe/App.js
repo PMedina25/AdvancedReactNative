@@ -5,7 +5,7 @@ import {
   Text,
   View,
 } from 'react-native';
-import { Card, Button } from 'react-native-elements';
+import { Card, Button } from '@rneui/themed';
 import Deck from './src/Deck';
 
 const DATA = [
@@ -74,4 +74,4 @@ const styles = StyleSheet.create({
   },
 });
 
-Expo.registerRootComponent(App);
+export default App
