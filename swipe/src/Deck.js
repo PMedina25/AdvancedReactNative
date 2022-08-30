@@ -45,11 +45,9 @@ const Deck = ({
   const position = useRef(new Animated.ValueXY()).current;
   const swipeTreshold = 0.25 * width;
 
-  // componentWillReceiveProps(nextProps) {
-  //   if (nextProps.data !== props.data) {
-  //     setIndex(0);
-  //   }
-  // }
+  useEffect(() => {
+    setIndex(0);
+  }, [data]);
 
   useEffect(() => {
     UIManager.setLayoutAnimationEnabledExperimental &&
